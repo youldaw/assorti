@@ -13,8 +13,8 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header fixed">
-			<div class="container-fluid p-0">
+		<header class="header">
+			<div class="container p-0">
 				<div class="header-block">
 					<div class="header-menu">
 						<a href="#!" class="menu-btn" data-bs-toggle="modal" data-bs-target="#menu-id">
@@ -35,18 +35,116 @@
 			</div>
 		</header>
 
-		<main>
-			<section class="main-sec">
-				<div class="container">
-					<div class="row">
+		<main class="main">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <a href="#!">Главная</a>
+                    <span>/</span>
+                    <p>Контакты</p>
+                </div>
+            </div>
 
+			<section class="about-contact">
+                <div class="container">
+                    <div class="title">
+                        <h2>Контакты</h2>
+                    </div>
+                </div>
+
+                <div class="container-fluid p-0">
+                    <div class="contact-map">
+                        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/197/barnaul/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Барнаул</a><a href="https://yandex.uz/maps/197/barnaul/house/vlasikhinskaya_ulitsa_141k2/bEoYcANmS0cEQFtpfX9yc3thYQ==/?ll=83.647477%2C53.332613&utm_medium=mapframe&utm_source=maps&z=16.63" style="color:#eee;font-size:12px;position:absolute;top:14px;">Власихинская улица, 141к2 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=83.647477%2C53.332613&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgozMTQwNTg2MTIxEmbQoNC-0YHRgdC40Y8sINCQ0LvRgtCw0LnRgdC60LjQuSDQutGA0LDQuSwg0JHQsNGA0L3QsNGD0LssINCS0LvQsNGB0LjRhdC40L3RgdC60LDRjyDRg9C70LjRhtCwLCAxNDHQujIiCg3dSqdCFbZUVUI%2C&z=16.63" width="560" height="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-3">
+                            <div class="contact-map-item">
+                                <img src="images/icons/contact-location-icon.png" alt="">
+                                <address>г. Барнаул, <br>ул. Власихинская, <br>д. 141, офис 9</address>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-6">
+                            <div class="contact-info">
+                                <div class="info-icon">
+                                    <img src="images/icons/big-vk-icon.svg" alt="">
+                                </div>
+								<div class="info-numbers">
+									<a href="tel:+7 (3852) 69-79-09"><img src="images/icons/phone-icon.svg" alt="">+7 (3852) 69-79-09</a>
+									<a href="tel:+7(913) 247-7012"><img src="images/icons/whatsapp-icon.svg" alt="">+7(913) 247-7012<span>(WhatsApp)</span></a>
+									<a href="tel:+7(952) 006-0230"><img src="images/icons/phone-icon.svg" alt="">+7(952) 006-0230</a>
+									<a href="#!"><img src="images/icons/skype-icon.svg" alt="">Skype: asmoto_vy</a>
+									<div class="for-margin"></div>
+									<a href="mailto:zakaz@assortimotors.ru"><img src="images/icons/mail-icon.svg" alt="">zakaz@assortimotors.ru</a>
+									<a href="mailto:yashkin@assortimotors.ru"><img src="images/icons/mail-icon.svg" alt="">yashkin@assortimotors.ru</a>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+			<section class="message-form-sec">
+				<div class="container">
+					<div class="title">
+						<h3>отправьте  нам  сообщение</h3>
+						<p>мы свяжемся с вами в ближайшее время</p>
+					</div>
+					<div class="row">
+						<div class="col-md-8">
+							<form action="#!" id="message-form" method="POST">
+								<div class="message-form">
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="form-group">
+												<input type="text" name="name" placeholder="Ваше имя">
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="form-group">
+												<input type="tel" name="phone" placeholder="Ваш телефон">
+											</div>
+										</div>
+
+										<div class="col-lg-12">
+											<div class="form-group comment-text">
+												<input type="text" name="comment" placeholder="Какой автомобиль Вас интересует?">
+											</div>
+										</div>
+									</div>
+
+									<div class="message-form-rating">
+										<div class="rating-agree">
+											<label class="control control--checkbox">
+												<input type="checkbox" checked="checked">
+												<div class="control__indicator"></div>
+												<span>Отправляя данную форму, я даю своё согласие на обработку моих персональных данных</span>
+											</label>
+										</div>
+										<div class="message-form-btn">
+											<button type="submit">отправить</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+
+						<div class="col-lg-4">
+							<div class="message-form-img">
+								<img src="images/message-form-img.png" alt="">
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
 		</main>
 
 		<footer class="footer">
-			<div class="container-fluid p-0">
+			<div class="container p-0">
 				<div class="footer-logo">
 					<div class="logo-block">
 						<a href="#!"><img src="images/icons/footer-logo.svg" alt=""></a>
@@ -54,7 +152,7 @@
 				</div>
 			</div>
 
-			<div class="container-fluid">
+			<div class="container">
 				<div class="footer-block">
 					<div class="row justify-content-between">
 						<div class="col-lg-4">
@@ -121,7 +219,7 @@
 				</div>
 			</div>
 
-			<div class="container-fluid p-0">
+			<div class="container p-0">
 				<div class="footer-end">
 					<p>© Copyright 1999 - 2023</p>
 					<div class="footer-end-links">
@@ -221,5 +319,6 @@
 	<script src="libs/bootstrap5/bootstrap.min.js"></script>
 	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/script.js"></script>
+
 </body>
 </html>
