@@ -9,31 +9,31 @@ $(function () {
         $('.navbar').toggleClass('active');
     });
 
-    // var swiper3 = new Swiper(".quality-slide-in", {
-    //     slidesPerView: 1,
-    //     spaceBetween: 10,
-    //     loop: true,
-    //     speed: 1000,
-    //     pagination: {
-    //         el: ".swiper-pagination",
-    //         clickable: true,
-    //     },
-    //     navigation: {
-    //         nextEl: ".swiper-button-next",
-    //         prevEl: ".swiper-button-prev",
-    //     },
-    //     breakpoints: {
-    //         640: {
-    //             slidesPerView: 1,
-    //         },
-    //         768: {
-    //             slidesPerView: 1,
-    //         },
-    //         1024: {
-    //             slidesPerView: 1,
-    //         },
-    //     },
-    // });
+    var swiper2 = new Swiper(".we-slide", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        speed: 1000,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+        },
+    });
 
 
     // input type file
@@ -103,6 +103,30 @@ $(function () {
 			}
 		})
 	});
+
+
+	var swiper = new Swiper('.mySwiper', {
+		speed: 1000,
+		slidesPerView: 7,
+		spaceBetween: 70,
+		loop: true,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
+
+	try {
+		const swiper = new Swiper('.mySwiper3', {
+			loop: true,
+			slidesPerView: 1,
+			pagination: {
+				el: '.swiper-pagination',
+			},
+		});
+	} catch (error) {
+		
+	}
 
 
 });
