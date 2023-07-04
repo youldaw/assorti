@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
+	<div class="wrapper">
+		<header class="header">
 			<div class="container p-0">
 				<div class="header-block">
 					<div class="header-menu">
@@ -27,11 +27,11 @@
 							<img src="images/icons/logo.svg" alt="">
 						</a>
 						<a href="#!" class="header-logo-media">
-							<img src="images/icons/header-logo-2.svg" alt="">
+							<img src="images/mob-logo.svg" alt="">
 						</a>
 					</div>
 					<div class="header-right">
-						<a href="#!" class="header-right-btn">
+						<a href="#!" class="header-right-btn" data-bs-toggle="modal" data-bs-target="#message-id">
 							<img src="images/icons/header-top-right-icon.svg" alt="">
 						</a>
 						<div class="header-right-logos">
@@ -41,7 +41,7 @@
 							<a href="#!">
 								<img src="images/icons/whatsap8.svg" alt="">
 							</a>
-							<a href="#!">
+							<a href="#!" class="me-2" data-bs-toggle="modal" data-bs-target="#message-id">
 								<svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<circle cx="12.5002" cy="12.9999" r="12.1974" fill="#D60000" />
 									<path
@@ -55,232 +55,272 @@
 			</div>
 		</header>
 
-        <main class="main">
-            <div class="container">
-                <div class="breadcrumbs">
-                    <a href="#!">Главная</a>
-                    <span>/</span>
-                    <a href="#!">Клиентам</a>
-                    <span>/</span>
-                    <p>FAQ</p>
-                </div>
-            </div>
+		<main class="main">
+			<div class="container">
+				<div class="breadcrumbs">
+					<a href="#!">Главная</a>
+					<span>/</span>
+					<a href="#!">Клиентам</a>
+					<span>/</span>
+					<p>FAQ</p>
+				</div>
+			</div>
 
-            <section class="faq-sec">
-                <div class="container">
-                    <div class="second-title">
-                        <h2>вопросы</h2>
-                    </div>
+			<section class="faq-sec faq-section">
+				<div class="container">
+					<div class="second-title">
+						<h2>вопросы</h2>
+					</div>
 
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="faq-block">
-                                <div class="accordion" id="accordionExample">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingOne">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                <span>Какой автомобиль выбрать?</span>
-                                                <img src="images/icons/accordion-arrow.svg" alt="">
-                                            </button>
-                                        </h2>
-                                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <p>Как проверить на подлинность Паспорт автомобиля, идентификационные номера и маркировочные таблички, подлинность номерных агрегатов и проверить есть ли у автомобиля ограничения, препятствующие регистрационным действиям.</p>
-                                            </div>
-                                        </div>
-                                    </div>
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<div class="faq-block">
+								<div class="accordion" id="accordionExample">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingOne">
+											<button class="accordion-button" type="button" data-bs-toggle="collapse"
+												data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+												<span>Какой автомобиль выбрать?</span>
+												<img src="images/icons/accordion-arrow.svg" alt="">
+											</button>
+										</h2>
+										<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+											data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<p>Как проверить на подлинность Паспорт автомобиля, идентификационные номера и маркировочные
+													таблички, подлинность номерных агрегатов и проверить есть ли у автомобиля ограничения,
+													препятствующие регистрационным действиям.</p>
+											</div>
+										</div>
+									</div>
 
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingTwo">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                <span>Как искать и где искать нужный Вам автомобиль?</span>
-                                                <img src="images/icons/accordion-arrow.svg" alt="">
-                                            </button>
-                                        </h2>
-                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <p>Как проверить на подлинность Паспорт автомобиля, идентификационные номера и маркировочные таблички, подлинность номерных агрегатов и проверить есть ли у автомобиля ограничения, препятствующие регистрационным действиям.</p>
-                                            </div>
-                                        </div>
-                                    </div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingTwo">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+												data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+												<span>Как искать и где искать нужный Вам автомобиль?</span>
+												<img src="images/icons/accordion-arrow.svg" alt="">
+											</button>
+										</h2>
+										<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+											data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<p>Как проверить на подлинность Паспорт автомобиля, идентификационные номера и маркировочные
+													таблички, подлинность номерных агрегатов и проверить есть ли у автомобиля ограничения,
+													препятствующие регистрационным действиям.</p>
+											</div>
+										</div>
+									</div>
 
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingThree">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"aria-expanded="false" aria-controls="collapseThree">
-                                                <span>Как проверить техническое состояние автомобиля?</span>
-                                                <img src="images/icons/accordion-arrow.svg" alt="">
-                                            </button>
-                                        </h2>
-                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <p>Как проверить на подлинность Паспорт автомобиля, идентификационные номера и маркировочные таблички, подлинность номерных агрегатов и проверить есть ли у автомобиля ограничения, препятствующие регистрационным действиям.</p>
-                                            </div>
-                                        </div>
-                                    </div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingThree">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+												data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+												<span>Как проверить техническое состояние автомобиля?</span>
+												<img src="images/icons/accordion-arrow.svg" alt="">
+											</button>
+										</h2>
+										<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+											data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<p>Как проверить на подлинность Паспорт автомобиля, идентификационные номера и маркировочные
+													таблички, подлинность номерных агрегатов и проверить есть ли у автомобиля ограничения,
+													препятствующие регистрационным действиям.</p>
+											</div>
+										</div>
+									</div>
 
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingFour">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                                <span>Как вести обоснованный торг с продавцом?</span>
-                                                <img src="images/icons/accordion-arrow.svg" alt="">
-                                            </button>
-                                        </h2>
-                                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <p>Как проверить на подлинность Паспорт автомобиля, идентификационные номера и маркировочные таблички, подлинность номерных агрегатов и проверить есть ли у автомобиля ограничения, препятствующие регистрационным действиям.</p>
-                                            </div>
-                                        </div>
-                                    </div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingFour">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+												data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+												<span>Как вести обоснованный торг с продавцом?</span>
+												<img src="images/icons/accordion-arrow.svg" alt="">
+											</button>
+										</h2>
+										<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+											data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<p>Как проверить на подлинность Паспорт автомобиля, идентификационные номера и маркировочные
+													таблички, подлинность номерных агрегатов и проверить есть ли у автомобиля ограничения,
+													препятствующие регистрационным действиям.</p>
+											</div>
+										</div>
+									</div>
 
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingFive">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                                <span>Какую машину вы можете привезти?</span>
-                                                <img src="images/icons/accordion-arrow.svg" alt="">
-                                            </button>
-                                        </h2>
-                                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <p>Как проверить на подлинность Паспорт автомобиля, идентификационные номера и маркировочные таблички, подлинность номерных агрегатов и проверить есть ли у автомобиля ограничения, препятствующие регистрационным действиям.</p>
-                                            </div>
-                                        </div>
-                                    </div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingFive">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+												data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+												<span>Какую машину вы можете привезти?</span>
+												<img src="images/icons/accordion-arrow.svg" alt="">
+											</button>
+										</h2>
+										<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+											data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<p>Как проверить на подлинность Паспорт автомобиля, идентификационные номера и маркировочные
+													таблички, подлинность номерных агрегатов и проверить есть ли у автомобиля ограничения,
+													препятствующие регистрационным действиям.</p>
+											</div>
+										</div>
+									</div>
 
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingSix">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                                <span>Как проверить на подлинность Паспорт автомобиля, идентификационные номера и маркировочные таблички, подлинность номерных агрегатов и проверить есть ли у автомобиля ограничения, препятствующие регистрационным действиям.</span>
-                                                <img src="images/icons/accordion-arrow.svg" alt="">
-                                            </button>
-                                        </h2>
-                                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <p>Как проверить на подлинность Паспорт автомобиля, идентификационные номера и маркировочные таблички, подлинность номерных агрегатов и проверить есть ли у автомобиля ограничения, препятствующие регистрационным действиям.</p>
-                                            </div>
-                                        </div>
-                                    </div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingSix">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+												data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+												<span>Как проверить на подлинность Паспорт автомобиля, идентификационные номера и маркировочные
+													таблички, подлинность номерных агрегатов и проверить есть ли у автомобиля ограничения,
+													препятствующие регистрационным действиям.</span>
+												<img src="images/icons/accordion-arrow.svg" alt="">
+											</button>
+										</h2>
+										<div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+											data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<p>Как проверить на подлинность Паспорт автомобиля, идентификационные номера и маркировочные
+													таблички, подлинность номерных агрегатов и проверить есть ли у автомобиля ограничения,
+													препятствующие регистрационным действиям.</p>
+											</div>
+										</div>
+									</div>
 
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingSeven">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                                <span>Какой автомобиль выбрать?</span>
-                                                <img src="images/icons/accordion-arrow.svg" alt="">
-                                            </button>
-                                        </h2>
-                                        <div id="collapseSeven" class="accordion-collapse collapse"
-                                            aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <p>Как проверить на подлинность Паспорт автомобиля, идентификационные номера и маркировочные таблички, подлинность номерных агрегатов и проверить есть ли у автомобиля ограничения, препятствующие регистрационным действиям.</p>
-                                            </div>
-                                        </div>
-                                    </div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingSeven">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+												data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+												<span>Какой автомобиль выбрать?</span>
+												<img src="images/icons/accordion-arrow.svg" alt="">
+											</button>
+										</h2>
+										<div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+											data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<p>Как проверить на подлинность Паспорт автомобиля, идентификационные номера и маркировочные
+													таблички, подлинность номерных агрегатов и проверить есть ли у автомобиля ограничения,
+													препятствующие регистрационным действиям.</p>
+											</div>
+										</div>
+									</div>
 
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingEight">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                                <span>Как искать и где искать нужный Вам автомобиль?</span>
-                                                <img src="images/icons/accordion-arrow.svg" alt="">
-                                            </button>
-                                        </h2>
-                                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <p>Как проверить на подлинность Паспорт автомобиля, идентификационные номера и маркировочные таблички, подлинность номерных агрегатов и проверить есть ли у автомобиля ограничения, препятствующие регистрационным действиям.</p>
-                                            </div>
-                                        </div>
-                                    </div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingEight">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+												data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+												<span>Как искать и где искать нужный Вам автомобиль?</span>
+												<img src="images/icons/accordion-arrow.svg" alt="">
+											</button>
+										</h2>
+										<div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+											data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<p>Как проверить на подлинность Паспорт автомобиля, идентификационные номера и маркировочные
+													таблички, подлинность номерных агрегатов и проверить есть ли у автомобиля ограничения,
+													препятствующие регистрационным действиям.</p>
+											</div>
+										</div>
+									</div>
 
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingNine">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                                                <span>Как проверить техническое состояние автомобиля?</span>
-                                                <img src="images/icons/accordion-arrow.svg" alt="">
-                                            </button>
-                                        </h2>
-                                        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <p>Как проверить на подлинность Паспорт автомобиля, идентификационные номера и маркировочные таблички, подлинность номерных агрегатов и проверить есть ли у автомобиля ограничения, препятствующие регистрационным действиям.</p>
-                                            </div>
-                                        </div>
-                                    </div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingNine">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+												data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+												<span>Как проверить техническое состояние автомобиля?</span>
+												<img src="images/icons/accordion-arrow.svg" alt="">
+											</button>
+										</h2>
+										<div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+											data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<p>Как проверить на подлинность Паспорт автомобиля, идентификационные номера и маркировочные
+													таблички, подлинность номерных агрегатов и проверить есть ли у автомобиля ограничения,
+													препятствующие регистрационным действиям.</p>
+											</div>
+										</div>
+									</div>
 
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingTen">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                                                <span>Как вести обоснованный торг с продавцом?</span>
-                                                <img src="images/icons/accordion-arrow.svg" alt="">
-                                            </button>
-                                        </h2>
-                                        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <p>Как проверить на подлинность Паспорт автомобиля, идентификационные номера и маркировочные таблички, подлинность номерных агрегатов и проверить есть ли у автомобиля ограничения, препятствующие регистрационным действиям.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingTen">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+												data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+												<span>Как вести обоснованный торг с продавцом?</span>
+												<img src="images/icons/accordion-arrow.svg" alt="">
+											</button>
+										</h2>
+										<div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+											data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<p>Как проверить на подлинность Паспорт автомобиля, идентификационные номера и маркировочные
+													таблички, подлинность номерных агрегатов и проверить есть ли у автомобиля ограничения,
+													препятствующие регистрационным действиям.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-            <section class="message-form-sec">
-                <div class="container">
-                    <div class="title">
-                        <h3>отправьте нам сообщение</h3>
-                        <p>мы свяжемся с вами в ближайшее время</p>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-8">
-                            <form action="#!" id="message-form" method="POST">
-                                <div class="message-form">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <input type="text" name="name" placeholder="Ваше имя">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <input type="tel" name="phone" placeholder="Ваш телефон">
-                                            </div>
-                                        </div>
+			<section class="message-form-sec">
+				<div class="container">
+					<div class="title">
+						<h3>отправьте нам сообщение</h3>
+						<p>мы свяжемся с вами в ближайшее время</p>
+					</div>
+					<div class="row">
+						<div class="col-md-8">
+							<form action="#!" id="message-form" method="POST">
+								<div class="message-form">
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="form-group">
+												<input type="text" name="name" placeholder="Ваше имя">
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="form-group">
+												<input type="tel" name="phone" placeholder="Ваш телефон">
+											</div>
+										</div>
 
-                                        <div class="col-lg-12">
-                                            <div class="form-group comment-text">
-                                                <input type="text" name="comment"
-                                                    placeholder="Какой автомобиль Вас интересует?">
-                                            </div>
-                                        </div>
-                                    </div>
+										<div class="col-lg-12">
+											<div class="form-group comment-text">
+												<input type="text" name="comment" placeholder="Какой автомобиль Вас интересует?">
+											</div>
+										</div>
+									</div>
 
-                                    <div class="message-form-rating">
-                                        <div class="rating-agree">
-                                            <label class="control control--checkbox">
-                                                <input type="checkbox" checked="checked">
-                                                <div class="control__indicator"></div>
-                                                <span>Отправляя данную форму, я даю своё согласие на обработку моих
-                                                    персональных данных</span>
-                                            </label>
-                                        </div>
-                                        <div class="message-form-btn">
-                                            <button type="submit">отправить</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+									<div class="message-form-rating">
+										<div class="rating-agree">
+											<label class="control control--checkbox">
+												<input type="checkbox" checked="checked">
+												<div class="control__indicator"></div>
+												<span>Отправляя данную форму, я даю своё согласие на обработку моих
+													персональных данных</span>
+											</label>
+										</div>
+										<div class="message-form-btn">
+											<button type="submit">отправить</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
 
-                        <div class="col-lg-4">
-                            <div class="message-form-img">
-                                <img src="images/message-form-img.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
+						<div class="col-lg-4">
+							<div class="message-form-img">
+								<img src="images/message-form-img.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 
-        <footer class="footer">
+		<footer class="footer">
 			<div class="container p-0">
 				<div class="footer-logo">
 					<div class="logo-block">
@@ -292,7 +332,7 @@
 					</button>
 				</div>
 			</div>
-		
+
 			<div class="container">
 				<div class="footer-block">
 					<div class="row justify-content-between">
@@ -303,7 +343,7 @@
 										<img src="images/icons/location-icon.svg" alt="">
 										<span>656067, Россия, Алтайский край, г. Барнаул, ул. Власихинская 141, оф. 9</span>
 									</div>
-		
+
 									<div class="address-in two">
 										<img src="images/icons/vk-icon.svg" alt="">
 										<span>@assortimotors</span>
@@ -323,7 +363,7 @@
 								</div>
 							</div>
 						</div>
-		
+
 						<div class="col-lg-7">
 							<div class="footer-menu-block">
 								<div class="footer-menu">
@@ -354,7 +394,7 @@
 									<a href="#!">Новости</a>
 									<a href="#!">Акции</a>
 									<a href="#!">Статьи</a>
-		
+
 									<p class="contact-title">Контакты</p>
 								</div>
 							</div>
@@ -362,7 +402,7 @@
 					</div>
 				</div>
 			</div>
-		
+
 			<div class="container p-0">
 				<div class="footer-end">
 					<p>© Copyright 1999 - 2023</p>
@@ -373,98 +413,151 @@
 				</div>
 			</div>
 		</footer>
-    </div>
+	</div>
 
-    <!-- menu modal -->
-    <!-- Button trigger modal -->
-    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+	<!-- menu modal -->
+	<!-- Button trigger modal -->
+	<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
 		Launch demo modal
 	</button> -->
 
-    <!-- Modal -->
-    <div class="modal fade menu-modal" id="menu-id" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-                <img src="images/menu-img.png" alt="" class="menu-img">
+	<!-- Modal -->
+	<div class="modal fade menu-modal" id="menu-id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-fullscreen">
+			<div class="modal-content">
+				<img src="images/menu-img.png" alt="" class="menu-img">
 
-                <div class="modal-header">
-                    <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close"><img
-                            src="images/icons/modal-close-icon.svg" alt=""></button>
-                    <h5 class="modal-title" id="exampleModalLabel"><img src="images/icons/menu-logo.svg" alt=""></h5>
-                </div>
-                <div class="modal-body">
-                    <div class="menu-content">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <div class="row">
-                                    <div class="col-lg-8">
-                                        <div class="menu-in">
-                                            <p>направления работы</p>
-                                            <div class="menu-links">
-                                                <a href="#!">Автомобили с аукционов Японии</a>
-                                                <a href="#!">Автомобили с аукционов Ю.Кореи</a>
-                                                <a href="#!">Мотоциклы с аукционов Японии</a>
-                                                <a href="#!">Автозапчасти из Японии</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="menu-in">
-                                            <p>клиентам</p>
-                                            <div class="menu-links">
-                                                <a href="#!">Аукционы онлайн</a>
-                                                <a href="#!">Статистика продаж</a>
-                                                <a href="#!">Каталог автомобилей</a>
-                                                <a href="#!">Полезные ссылки</a>
-                                                <a href="#!">Доставка и оплата</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+				<div class="modal-header">
+					<button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close"><img
+							src="images/icons/modal-close-icon.svg" alt=""></button>
+					<h5 class="modal-title" id="exampleModalLabel"><img src="images/icons/menu-logo.svg" alt=""></h5>
+				</div>
+				<div class="modal-body">
+					<div class="menu-content">
+						<div class="row">
+							<div class="col-lg-8">
+								<div class="row">
+									<div class="col-lg-8">
+										<div class="menu-in">
+											<p>направления работы</p>
+											<div class="menu-links">
+												<a href="#!">Автомобили с аукционов Японии</a>
+												<a href="#!">Автомобили с аукционов Ю.Кореи</a>
+												<a href="#!">Мотоциклы с аукционов Японии</a>
+												<a href="#!">Автозапчасти из Японии</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="menu-in">
+											<p>клиентам</p>
+											<div class="menu-links">
+												<a href="#!">Аукционы онлайн</a>
+												<a href="#!">Статистика продаж</a>
+												<a href="#!">Каталог автомобилей</a>
+												<a href="#!">Полезные ссылки</a>
+												<a href="#!">Доставка и оплата</a>
+											</div>
+										</div>
+									</div>
+								</div>
 
-                                <div class="row">
-                                    <div class="col-lg-8">
-                                        <div class="menu-in">
-                                            <p>О компании</p>
-                                            <div class="menu-links">
-                                                <a href="#!">История компании</a>
-                                                <a href="#!">Что привозили</a>
-                                                <a href="#!">Отзывы</a>
-                                                <a href="#!">Схема работы</a>
-                                                <a href="#!">FAQ</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="menu-in">
-                                            <p>статьи</p>
-                                            <div class="menu-links">
-                                                <a href="#!">Новости</a>
-                                                <a href="#!">Акции</a>
-                                                <a href="#!">Статьи</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+								<div class="row">
+									<div class="col-lg-8">
+										<div class="menu-in">
+											<p>О компании</p>
+											<div class="menu-links">
+												<a href="#!">История компании</a>
+												<a href="#!">Что привозили</a>
+												<a href="#!">Отзывы</a>
+												<a href="#!">Схема работы</a>
+												<a href="#!">FAQ</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="menu-in">
+											<p>статьи</p>
+											<div class="menu-links">
+												<a href="#!">Новости</a>
+												<a href="#!">Акции</a>
+												<a href="#!">Статьи</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-                    <div class="menu-footer">
-                        <p>автомобили, мотоциклы и автозапчасти
-                            с аукционов японии и южной кореи</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+					<div class="menu-footer">
+						<p>автомобили, мотоциклы и автозапчасти
+							с аукционов японии и южной кореи</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal zakazat avto -->
+	<div class="modal fade message-modal" id="message-id" tabindex="-1" aria-labelledby="exampleModalLabel2"
+		aria-hidden="true">
+		<div class="modal-dialog modal-fullscreen">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close"><img
+							src="images/icons/modal-close-icon.svg" alt=""></button>
+					<h5 class="modal-title" id="exampleModalLabel2"><img class="modal-logo" src="images/icons/menu-logo.svg"
+							alt="">
+					</h5>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-lg-1"></div>
+						<div class="col-lg-6">
+							<div class="message-title">
+								<h2>отправьте нам сообщение</h2>
+							</div>
+							<div class="message-form">
+								<form action="#!" id="message-modal-form">
+									<div class="form-group">
+										<input type="text" name="name" placeholder="Ваше имя">
+									</div>
+									<div class="form-group">
+										<input type="tel" name="phone" placeholder="Ваш телефон">
+									</div>
+									<div class="form-group">
+										<input type="text" name="choose-avto" placeholder="Какой автомобиль Вас интересует?">
+									</div>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/jquery.maskedinput.min.js"></script>
-    <script src="libs/bootstrap5/bootstrap.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
+									<div class="message-btn">
+										<button type="submit">отправить</button>
+									</div>
+
+									<label class="control control--checkbox">
+										<input type="checkbox" checked="checked">
+										<div class="control__indicator"></div>
+										<span>Отправляя данную форму, я даю своё согласие на обработку моих персональных данных</span>
+									</label>
+								</form>
+							</div>
+						</div>
+
+						<div class="col-lg-5">
+							<div class="message-img">
+								<img src="images/message-modal-img.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="libs/bootstrap5/bootstrap.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
 
 </body>
 

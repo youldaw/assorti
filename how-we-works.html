@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
+	<div class="wrapper">
+		<header class="header">
 			<div class="container p-0">
 				<div class="header-block">
 					<div class="header-menu">
@@ -27,11 +27,11 @@
 							<img src="images/icons/logo.svg" alt="">
 						</a>
 						<a href="#!" class="header-logo-media">
-							<img src="images/icons/header-logo-2.svg" alt="">
+							<img src="images/mob-logo.svg" alt="">
 						</a>
 					</div>
 					<div class="header-right">
-						<a href="#!" class="header-right-btn">
+						<a href="#!" class="header-right-btn" data-bs-toggle="modal" data-bs-target="#message-id">
 							<img src="images/icons/header-top-right-icon.svg" alt="">
 						</a>
 						<div class="header-right-logos">
@@ -41,7 +41,7 @@
 							<a href="#!">
 								<img src="images/icons/whatsap8.svg" alt="">
 							</a>
-							<a href="#!">
+							<a href="#!" class="me-2" data-bs-toggle="modal" data-bs-target="#message-id">
 								<svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<circle cx="12.5002" cy="12.9999" r="12.1974" fill="#D60000" />
 									<path
@@ -55,353 +55,439 @@
 			</div>
 		</header>
 
-        <main class="main">
-            <div class="container">
-                <div class="breadcrumbs">
-                    <a href="#!">Главная</a>
-                    <span>/</span>
-                    <a href="#!">Клиентам</a>
-                    <span>/</span>
-                    <p>Как мы работаем</p>
-                </div>
-            </div>
+		<main class="main">
+			<div class="container">
+				<div class="breadcrumbs">
+					<a href="#!">Главная</a>
+					<span>/</span>
+					<a href="#!">Клиентам</a>
+					<span>/</span>
+					<p>Как мы работаем</p>
+				</div>
+			</div>
 
-            <section class="how-work">
-                <div class="container">
-                    <div class="how-content">
-                        <div class="title">
-                            <h4>как  мы  работаем</h4>
-                        </div>
-    
-                        <div class="row justify-content-end">
-                            <div class="col-lg-11">
-                                <div class="how-block">
-                                    <div class="row align-items-center">
-                                        <div class="col-lg-5">
-                                            <div class="how-left">
-                                                <div class="how-in">
-                                                    <div class="how-number red">
-                                                        <h5>2000+</h5>
-                                                        <p>машин уже <br> привезли <br>за годы работы</p>
-                                                    </div>
-                                                    <div class="how-number">
-                                                        <h5>20</h5>
-                                                        <p>лет возим <br>автомобили с Востока</p>
-                                                    </div>
-                                                </div>
-                                                <div class="how-in">
-                                                    <div class="how-number">
-                                                        <h5>10</h5>
-                                                        <p>дней и ваша <br>машина стоит <br> у вас</p>
-                                                    </div>
-                                                    <div class="how-number">
-                                                        <h5>0</h5>
-                                                        <p>негативных <br> случаев <br>или отзывов</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-    
-                                            <div class="how-btn">
-                                                <a href="#!" class="red-btn">заказать авто</a>
-                                            </div>
-                                        </div>
-        
-                                        <div class="col-lg-7">
-                                            <div class="how-right">
-                                                <img src="images/how-we-work-img.jpg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+			<section class="how-work">
+				<div class="container">
+					<div class="how-content">
+						<div class="title">
+							<h4>как мы работаем</h4>
+						</div>
 
-            <section class="we-work how-work">
-                <div class="container">
-                    <div class="title">
-                        <h3>как  будет  проходить  работа <br>по  вашему  заказу:</h3>
-                    </div>
+						<div class="row justify-content-end">
+							<div class="col-lg-11">
+								<div class="how-block">
+									<div class="row align-items-center">
+										<div class="col-lg-5">
+											<div class="how-left">
+												<div class="how-in">
+													<div class="how-number red">
+														<h5>2000+</h5>
+														<p>машин уже <br> привезли <br>за годы работы</p>
+														<img class="md-icon d-none" src="images/icons/next-icon2.svg" alt="">
+													</div>
+													<div class="how-number">
+														<h5>20</h5>
+														<p>лет возим <br>автомобили с Востока</p>
+														<img class="md-icon d-none" src="images/icons/next-icon2.svg" alt="">
+													</div>
+												</div>
+												<div class="how-in">
+													<div class="how-number">
+														<h5>10</h5>
+														<p>дней и ваша <br>машина стоит <br> у вас</p>
+														<img class="md-icon d-none" src="images/icons/next-icon2.svg" alt="">
+													</div>
+													<div class="how-number">
+														<h5>0</h5>
+														<p>негативных <br> случаев <br>или отзывов</p>
+														<img class="md-icon d-none" src="images/icons/next-icon2.svg" alt="">
+													</div>
+												</div>
+											</div>
 
-                    <div class="row justify-content-center">
-                        <div class="col-lg-10">
-                            <div class="row align-items-center we-rov left-rov">
-                                <div class="col-lg-5">
-                                    <div class="we-img">
-                                        <img src="images/we-work-img1.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-2 we-number">
-                                    <span>01</span>
-                                </div>
-                                <div class="col-lg-5">
-                                    <div class="we-text">
-                                        <p>Описание первого шага в цепочке покупки автомобиля с помощью компании Ассорти Моторс</p>
-                                        <span>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+											<div class="how-btn">
+												<a href="#!" class="red-btn" data-bs-toggle="modal" data-bs-target="#message-id">заказать авто</a>
+											</div>
+										</div>
 
-                    <div class="row justify-content-center">
-                        <div class="col-lg-10">
-                            <div class="row align-items-center we-rov left-right">
-                                <div class="col-lg-5">
-                                    <div class="we-text">
-                                        <p>Описание первого шага в цепочке покупки автомобиля с помощью компании Ассорти Моторс</p>
-                                        <span>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.</span>
-                                    </div>
-                                </div>
+										<div class="col-lg-7">
+											<div class="how-right">
+												<img src="images/how-we-work-img.jpg" alt="">
+											</div>
+											<div class="how-btn d-none">
+												<a href="#!" class="red-btn" data-bs-toggle="modal" data-bs-target="#message-id">заказать авто</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-                                <div class="col-lg-2 we-number">
-                                    <span>02</span>
-                                </div>
+			<section class="we-work how-work">
+				<div class="container">
+					<div class="title">
+						<h3>как будет проходить работа <br>по вашему заказу:</h3>
+					</div>
 
-                                <div class="col-lg-5">
-                                    <div class="we-img">
-                                        <img src="images/we-work-img2.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+					<div class="row justify-content-center media-hide-block">
+						<div class="col-lg-10">
+							<div class="row align-items-center we-rov left-rov">
+								<div class="col-lg-5">
+									<div class="we-img">
+										<img src="images/we-work-img1.jpg" alt="">
+									</div>
+								</div>
+								<div class="col-lg-2 we-number">
+									<span>01</span>
+								</div>
+								<div class="col-lg-5">
+									<div class="we-text">
+										<p>Описание первого шага в цепочке покупки автомобиля с помощью компании Ассорти Моторс</p>
+										<span>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis
+											deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint
+											deserunt ut voluptate aute id deserunt nisi.</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-                    <div class="row justify-content-center">
-                        <div class="col-lg-10">
-                            <div class="row align-items-center we-rov left-rov">
-                                <div class="col-lg-5">
-                                    <div class="we-img">
-                                        <img src="images/we-work-img3.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-2 we-number">
-                                    <span>03</span>
-                                </div>
-                                <div class="col-lg-5">
-                                    <div class="we-text">
-                                        <p>Описание третьего шага в цепочке покупки автомобиля с помощью компании Ассорти Моторс</p>
-                                        <span>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+					<div class="row justify-content-center media-hide-block">
+						<div class="col-lg-10">
+							<div class="row align-items-center we-rov left-right">
+								<div class="col-lg-5">
+									<div class="we-text">
+										<p>Описание первого шага в цепочке покупки автомобиля с помощью компании Ассорти Моторс</p>
+										<span>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis
+											deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint
+											deserunt ut voluptate aute id deserunt nisi.</span>
+									</div>
+								</div>
 
-                    <div class="we-btn">
-                        <a href="#!" class="red-btn">Оставить заявку на подбор автомобиля</a>
-                    </div>
-                </div>
-            </section>
+								<div class="col-lg-2 we-number">
+									<span>02</span>
+								</div>
 
-            <section class="we-review how-review">
-                <img src="images/fish-img.svg" alt="" class="fish-img">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-3">
-                            <div class="second-title white">
-                                <h2>отзывы</h2>
-                                <p>наших клиентов о работе с нашей компанией</p>
-                                <a href="#!" class="more-link">Читать отзывы <img src="images/icons/more-link-icon-white.svg" alt=""></a>
-                            </div>
-                        </div>
+								<div class="col-lg-5">
+									<div class="we-img">
+										<img src="images/we-work-img2.jpg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-                        <div class="col-lg-9">
-                            <div class="we-slide">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="review-col">
-                                            <div class="review-block">
-                                                <div class="review-text">
-                                                    <img src="images/icons/quote-icon.png" alt="">
-                                                    
-                                                    <div class="review-text-in">
-                                                        <div class="in-text">
-                                                            <p>––– Cпасибо большое за квалифицированную помощь! Сервисом очень доволен, с вами намного спокойнее! Люди, лучше реально заплатить и выбрать качественное авто, чем пытаться сэкономить там где не надо...</p>
-                                                        </div>
-                
-                                                        <a href="#!" class="more-link">Еще <img src="images/icons/more-link-icon.svg" alt=""></a>
-                                                    </div>
-                                                </div>
-                
-                                                <div class="review-end">
-                                                    <div class="review-avatar">
-                                                        <img src="images/review-avatar1.png" alt="">
-                                                    </div>
-                                                    <div class="review-name">
-                                                        <p>Константин Константинопольский</p>
-                                                        <div class="review-rating">
-                                                            <span>
-                                                                <img src="images/icons/star-icon.svg" alt="">
-                                                            </span>
-                                                            <span>
-                                                                <img src="images/icons/star-icon.svg" alt="">
-                                                            </span>
-                                                            <span>
-                                                                <img src="images/icons/star-icon.svg" alt="">
-                                                            </span>
-                                                            <span>
-                                                                <img src="images/icons/star-icon.svg" alt="">
-                                                            </span>
-                                                            <span>
-                                                                <img src="images/icons/star-icon.svg" alt="">
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="review-col">
-                                            <div class="review-block">
-                                                <div class="review-text">
-                                                    <img src="images/icons/quote-icon.png" alt="">
-                                                    
-                                                    <div class="review-text-in">
-                                                        <div class="in-text">
-                                                            <p>––– Cпасибо большое за квалифицированную помощь! Сервисом очень доволен, с вами намного спокойнее! Люди, лучше реально заплатить и выбрать качественное авто, чем пытаться сэкономить там где не надо...</p>
-                                                        </div>
-                
-                                                        <a href="#!" class="more-link">Еще <img src="images/icons/more-link-icon.svg" alt=""></a>
-                                                    </div>
-                                                </div>
-                
-                                                <div class="review-end">
-                                                    <div class="review-avatar">
-                                                        <img src="images/review-avatar1.png" alt="">
-                                                    </div>
-                                                    <div class="review-name">
-                                                        <p>Константин Константинопольский</p>
-                                                        <div class="review-rating">
-                                                            <span>
-                                                                <img src="images/icons/star-icon.svg" alt="">
-                                                            </span>
-                                                            <span>
-                                                                <img src="images/icons/star-icon.svg" alt="">
-                                                            </span>
-                                                            <span>
-                                                                <img src="images/icons/star-icon.svg" alt="">
-                                                            </span>
-                                                            <span>
-                                                                <img src="images/icons/star-icon.svg" alt="">
-                                                            </span>
-                                                            <span>
-                                                                <img src="images/icons/star-icon.svg" alt="">
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="review-col">
-                                            <div class="review-block">
-                                                <div class="review-text">
-                                                    <img src="images/icons/quote-icon.png" alt="">
-                                                    
-                                                    <div class="review-text-in">
-                                                        <div class="in-text">
-                                                            <p>––– Cпасибо большое за квалифицированную помощь! Сервисом очень доволен, с вами намного спокойнее! Люди, лучше реально заплатить и выбрать качественное авто, чем пытаться сэкономить там где не надо...</p>
-                                                        </div>
-                
-                                                        <a href="#!" class="more-link">Еще <img src="images/icons/more-link-icon.svg" alt=""></a>
-                                                    </div>
-                                                </div>
-                
-                                                <div class="review-end">
-                                                    <div class="review-avatar">
-                                                        <img src="images/review-avatar1.png" alt="">
-                                                    </div>
-                                                    <div class="review-name">
-                                                        <p>Константин Константинопольский</p>
-                                                        <div class="review-rating">
-                                                            <span>
-                                                                <img src="images/icons/star-icon.svg" alt="">
-                                                            </span>
-                                                            <span>
-                                                                <img src="images/icons/star-icon.svg" alt="">
-                                                            </span>
-                                                            <span>
-                                                                <img src="images/icons/star-icon.svg" alt="">
-                                                            </span>
-                                                            <span>
-                                                                <img src="images/icons/star-icon.svg" alt="">
-                                                            </span>
-                                                            <span>
-                                                                <img src="images/icons/star-icon.svg" alt="">
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="review-col">
-                                            <div class="review-block">
-                                                <div class="review-text">
-                                                    <img src="images/icons/quote-icon.png" alt="">
-                                                    
-                                                    <div class="review-text-in">
-                                                        <div class="in-text">
-                                                            <p>––– Cпасибо большое за квалифицированную помощь! Сервисом очень доволен, с вами намного спокойнее! Люди, лучше реально заплатить и выбрать качественное авто, чем пытаться сэкономить там где не надо...</p>
-                                                        </div>
-                
-                                                        <a href="#!" class="more-link">Еще <img src="images/icons/more-link-icon.svg" alt=""></a>
-                                                    </div>
-                                                </div>
-                
-                                                <div class="review-end">
-                                                    <div class="review-avatar">
-                                                        <img src="images/review-avatar1.png" alt="">
-                                                    </div>
-                                                    <div class="review-name">
-                                                        <p>Константин Константинопольский</p>
-                                                        <div class="review-rating">
-                                                            <span>
-                                                                <img src="images/icons/star-icon.svg" alt="">
-                                                            </span>
-                                                            <span>
-                                                                <img src="images/icons/star-icon.svg" alt="">
-                                                            </span>
-                                                            <span>
-                                                                <img src="images/icons/star-icon.svg" alt="">
-                                                            </span>
-                                                            <span>
-                                                                <img src="images/icons/star-icon.svg" alt="">
-                                                            </span>
-                                                            <span>
-                                                                <img src="images/icons/star-icon.svg" alt="">
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+					<div class="row justify-content-center media-hide-block">
+						<div class="col-lg-10">
+							<div class="row align-items-center we-rov left-rov">
+								<div class="col-lg-5">
+									<div class="we-img">
+										<img src="images/we-work-img3.jpg" alt="">
+									</div>
+								</div>
+								<div class="col-lg-2 we-number">
+									<span>03</span>
+								</div>
+								<div class="col-lg-5">
+									<div class="we-text">
+										<p>Описание третьего шага в цепочке покупки автомобиля с помощью компании Ассорти Моторс</p>
+										<span>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis
+											deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint
+											deserunt ut voluptate aute id deserunt nisi.</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-                                <div class="swiper-pagination"></div>
-                                <div class="swiper-buttons">
-                                    <div class="swiper-button-prev">
-                                        <img src="images/icons/review-slide-arrow-left.png" alt="news-slider-img1" width="76px">
-                                    </div>
-                                    <div class="swiper-button-next">
-                                        <img src="images/icons/review-slide-arrow-right.png" alt="news-slider-img1" width="76px">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
+					<div class="media-show-slider d-none">
+						<div class="swiper media-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="img-box position-relative">
+										<img src="images/we-work-img1.jpg" alt="">
+										<div class="col-lg-2 we-number">
+											<span>01</span>
+										</div>
+									</div>
+									<div class="we-text">
+										<p>Описание первого шага в цепочке покупки автомобиля с помощью компании Ассорти Моторс</p>
+										<span>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis
+											deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint
+											deserunt ut voluptate aute id deserunt nisi.</span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="img-box position-relative">
+										<img src="images/we-work-img2.jpg" alt="">
+										<div class="col-lg-2 we-number">
+											<span>02</span>
+										</div>
+									</div>
+									<div class="we-text">
+										<p>Описание первого шага в цепочке покупки автомобиля с помощью компании Ассорти Моторс</p>
+										<span>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis
+											deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint
+											deserunt ut voluptate aute id deserunt nisi.</span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="img-box position-relative">
+										<img src="images/we-work-img2.jpg" alt="">
+										<div class="col-lg-2 we-number">
+											<span>01</span>
+										</div>
+									</div>
+									<div class="we-text">
+										<p>Описание первого шага в цепочке покупки автомобиля с помощью компании Ассорти Моторс</p>
+										<span>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis
+											deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint
+											deserunt ut voluptate aute id deserunt nisi.</span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="img-box position-relative">
+										<img src="images/we-work-img3.jpg" alt="">
+										<div class="col-lg-2 we-number">
+											<span>03</span>
+										</div>
+									</div>
+									<div class="we-text">
+										<p>Описание первого шага в цепочке покупки автомобиля с помощью компании Ассорти Моторс</p>
+										<span>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis
+											deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint
+											deserunt ut voluptate aute id deserunt nisi.</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-pagination d-none" id="meida-show-pagination"></div>
+						</div>
+					</div>
 
-        <footer class="footer">
+					<div class="we-btn">
+						<a href="#!" class="red-btn" data-bs-toggle="modal" data-bs-target="#message-id">Оставить заявку на подбор автомобиля</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="we-review how-review">
+				<img src="images/fish-img.svg" alt="" class="fish-img">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-3">
+							<div class="second-title white">
+								<h2>отзывы</h2>
+								<p>наших клиентов о работе с нашей компанией</p>
+								<a href="#!" class="more-link">Читать отзывы <img src="images/icons/more-link-icon-white.svg"
+										alt=""></a>
+							</div>
+						</div>
+
+						<div class="col-lg-9">
+							<div class="we-slide">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="review-col">
+											<div class="review-block">
+												<div class="review-text">
+													<img src="images/icons/quote-icon.png" alt="">
+
+													<div class="review-text-in">
+														<div class="in-text">
+															<p>––– Cпасибо большое за квалифицированную помощь! Сервисом очень доволен, с вами намного
+																спокойнее! Люди, лучше реально заплатить и выбрать качественное авто, чем пытаться
+																сэкономить там где не надо...</p>
+														</div>
+
+														<a href="#!" class="more-link">Еще <img src="images/icons/more-link-icon.svg" alt=""></a>
+													</div>
+												</div>
+
+												<div class="review-end">
+													<div class="review-avatar">
+														<img src="images/review-avatar1.png" alt="">
+													</div>
+													<div class="review-name">
+														<p>Константин Константинопольский</p>
+														<div class="review-rating">
+															<span>
+																<img src="images/icons/star-icon.svg" alt="">
+															</span>
+															<span>
+																<img src="images/icons/star-icon.svg" alt="">
+															</span>
+															<span>
+																<img src="images/icons/star-icon.svg" alt="">
+															</span>
+															<span>
+																<img src="images/icons/star-icon.svg" alt="">
+															</span>
+															<span>
+																<img src="images/icons/star-icon.svg" alt="">
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="review-col">
+											<div class="review-block">
+												<div class="review-text">
+													<img src="images/icons/quote-icon.png" alt="">
+
+													<div class="review-text-in">
+														<div class="in-text">
+															<p>––– Cпасибо большое за квалифицированную помощь! Сервисом очень доволен, с вами намного
+																спокойнее! Люди, лучше реально заплатить и выбрать качественное авто, чем пытаться
+																сэкономить там где не надо...</p>
+														</div>
+
+														<a href="#!" class="more-link">Еще <img src="images/icons/more-link-icon.svg" alt=""></a>
+													</div>
+												</div>
+
+												<div class="review-end">
+													<div class="review-avatar">
+														<img src="images/review-avatar1.png" alt="">
+													</div>
+													<div class="review-name">
+														<p>Константин Константинопольский</p>
+														<div class="review-rating">
+															<span>
+																<img src="images/icons/star-icon.svg" alt="">
+															</span>
+															<span>
+																<img src="images/icons/star-icon.svg" alt="">
+															</span>
+															<span>
+																<img src="images/icons/star-icon.svg" alt="">
+															</span>
+															<span>
+																<img src="images/icons/star-icon.svg" alt="">
+															</span>
+															<span>
+																<img src="images/icons/star-icon.svg" alt="">
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="review-col">
+											<div class="review-block">
+												<div class="review-text">
+													<img src="images/icons/quote-icon.png" alt="">
+
+													<div class="review-text-in">
+														<div class="in-text">
+															<p>––– Cпасибо большое за квалифицированную помощь! Сервисом очень доволен, с вами намного
+																спокойнее! Люди, лучше реально заплатить и выбрать качественное авто, чем пытаться
+																сэкономить там где не надо...</p>
+														</div>
+
+														<a href="#!" class="more-link">Еще <img src="images/icons/more-link-icon.svg" alt=""></a>
+													</div>
+												</div>
+
+												<div class="review-end">
+													<div class="review-avatar">
+														<img src="images/review-avatar1.png" alt="">
+													</div>
+													<div class="review-name">
+														<p>Константин Константинопольский</p>
+														<div class="review-rating">
+															<span>
+																<img src="images/icons/star-icon.svg" alt="">
+															</span>
+															<span>
+																<img src="images/icons/star-icon.svg" alt="">
+															</span>
+															<span>
+																<img src="images/icons/star-icon.svg" alt="">
+															</span>
+															<span>
+																<img src="images/icons/star-icon.svg" alt="">
+															</span>
+															<span>
+																<img src="images/icons/star-icon.svg" alt="">
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="review-col">
+											<div class="review-block">
+												<div class="review-text">
+													<img src="images/icons/quote-icon.png" alt="">
+
+													<div class="review-text-in">
+														<div class="in-text">
+															<p>––– Cпасибо большое за квалифицированную помощь! Сервисом очень доволен, с вами намного
+																спокойнее! Люди, лучше реально заплатить и выбрать качественное авто, чем пытаться
+																сэкономить там где не надо...</p>
+														</div>
+
+														<a href="#!" class="more-link">Еще <img src="images/icons/more-link-icon.svg" alt=""></a>
+													</div>
+												</div>
+
+												<div class="review-end">
+													<div class="review-avatar">
+														<img src="images/review-avatar1.png" alt="">
+													</div>
+													<div class="review-name">
+														<p>Константин Константинопольский</p>
+														<div class="review-rating">
+															<span>
+																<img src="images/icons/star-icon.svg" alt="">
+															</span>
+															<span>
+																<img src="images/icons/star-icon.svg" alt="">
+															</span>
+															<span>
+																<img src="images/icons/star-icon.svg" alt="">
+															</span>
+															<span>
+																<img src="images/icons/star-icon.svg" alt="">
+															</span>
+															<span>
+																<img src="images/icons/star-icon.svg" alt="">
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-pagination"></div>
+								<div class="swiper-buttons">
+									<div class="swiper-button-prev">
+										<img src="images/icons/review-slide-arrow-left.png" alt="news-slider-img1" width="76px">
+									</div>
+									<div class="swiper-button-next">
+										<img src="images/icons/review-slide-arrow-right.png" alt="news-slider-img1" width="76px">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
 			<div class="container p-0">
 				<div class="footer-logo">
 					<div class="logo-block">
@@ -413,7 +499,7 @@
 					</button>
 				</div>
 			</div>
-		
+
 			<div class="container">
 				<div class="footer-block">
 					<div class="row justify-content-between">
@@ -424,7 +510,7 @@
 										<img src="images/icons/location-icon.svg" alt="">
 										<span>656067, Россия, Алтайский край, г. Барнаул, ул. Власихинская 141, оф. 9</span>
 									</div>
-		
+
 									<div class="address-in two">
 										<img src="images/icons/vk-icon.svg" alt="">
 										<span>@assortimotors</span>
@@ -444,7 +530,7 @@
 								</div>
 							</div>
 						</div>
-		
+
 						<div class="col-lg-7">
 							<div class="footer-menu-block">
 								<div class="footer-menu">
@@ -475,7 +561,7 @@
 									<a href="#!">Новости</a>
 									<a href="#!">Акции</a>
 									<a href="#!">Статьи</a>
-		
+
 									<p class="contact-title">Контакты</p>
 								</div>
 							</div>
@@ -483,7 +569,7 @@
 					</div>
 				</div>
 			</div>
-		
+
 			<div class="container p-0">
 				<div class="footer-end">
 					<p>© Copyright 1999 - 2023</p>
@@ -494,98 +580,151 @@
 				</div>
 			</div>
 		</footer>
-    </div>
+	</div>
 
-    <!-- menu modal -->
-    <!-- Button trigger modal -->
-    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+	<!-- menu modal -->
+	<!-- Button trigger modal -->
+	<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
 		Launch demo modal
 	</button> -->
 
-    <!-- Modal -->
-    <div class="modal fade menu-modal" id="menu-id" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-                <img src="images/menu-img.png" alt="" class="menu-img">
+	<!-- Modal -->
+	<div class="modal fade menu-modal" id="menu-id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-fullscreen">
+			<div class="modal-content">
+				<img src="images/menu-img.png" alt="" class="menu-img">
 
-                <div class="modal-header">
-                    <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close"><img
-                            src="images/icons/modal-close-icon.svg" alt=""></button>
-                    <h5 class="modal-title" id="exampleModalLabel"><img src="images/icons/menu-logo.svg" alt=""></h5>
-                </div>
-                <div class="modal-body">
-                    <div class="menu-content">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <div class="row">
-                                    <div class="col-lg-8">
-                                        <div class="menu-in">
-                                            <p>направления работы</p>
-                                            <div class="menu-links">
-                                                <a href="#!">Автомобили с аукционов Японии</a>
-                                                <a href="#!">Автомобили с аукционов Ю.Кореи</a>
-                                                <a href="#!">Мотоциклы с аукционов Японии</a>
-                                                <a href="#!">Автозапчасти из Японии</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="menu-in">
-                                            <p>клиентам</p>
-                                            <div class="menu-links">
-                                                <a href="#!">Аукционы онлайн</a>
-                                                <a href="#!">Статистика продаж</a>
-                                                <a href="#!">Каталог автомобилей</a>
-                                                <a href="#!">Полезные ссылки</a>
-                                                <a href="#!">Доставка и оплата</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+				<div class="modal-header">
+					<button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close"><img
+							src="images/icons/modal-close-icon.svg" alt=""></button>
+					<h5 class="modal-title" id="exampleModalLabel"><img src="images/icons/menu-logo.svg" alt=""></h5>
+				</div>
+				<div class="modal-body">
+					<div class="menu-content">
+						<div class="row">
+							<div class="col-lg-8">
+								<div class="row">
+									<div class="col-lg-8">
+										<div class="menu-in">
+											<p>направления работы</p>
+											<div class="menu-links">
+												<a href="#!">Автомобили с аукционов Японии</a>
+												<a href="#!">Автомобили с аукционов Ю.Кореи</a>
+												<a href="#!">Мотоциклы с аукционов Японии</a>
+												<a href="#!">Автозапчасти из Японии</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="menu-in">
+											<p>клиентам</p>
+											<div class="menu-links">
+												<a href="#!">Аукционы онлайн</a>
+												<a href="#!">Статистика продаж</a>
+												<a href="#!">Каталог автомобилей</a>
+												<a href="#!">Полезные ссылки</a>
+												<a href="#!">Доставка и оплата</a>
+											</div>
+										</div>
+									</div>
+								</div>
 
-                                <div class="row">
-                                    <div class="col-lg-8">
-                                        <div class="menu-in">
-                                            <p>О компании</p>
-                                            <div class="menu-links">
-                                                <a href="#!">История компании</a>
-                                                <a href="#!">Что привозили</a>
-                                                <a href="#!">Отзывы</a>
-                                                <a href="#!">Схема работы</a>
-                                                <a href="#!">FAQ</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="menu-in">
-                                            <p>статьи</p>
-                                            <div class="menu-links">
-                                                <a href="#!">Новости</a>
-                                                <a href="#!">Акции</a>
-                                                <a href="#!">Статьи</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+								<div class="row">
+									<div class="col-lg-8">
+										<div class="menu-in">
+											<p>О компании</p>
+											<div class="menu-links">
+												<a href="#!">История компании</a>
+												<a href="#!">Что привозили</a>
+												<a href="#!">Отзывы</a>
+												<a href="#!">Схема работы</a>
+												<a href="#!">FAQ</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="menu-in">
+											<p>статьи</p>
+											<div class="menu-links">
+												<a href="#!">Новости</a>
+												<a href="#!">Акции</a>
+												<a href="#!">Статьи</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-                    <div class="menu-footer">
-                        <p>автомобили, мотоциклы и автозапчасти
-                            с аукционов японии и южной кореи</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+					<div class="menu-footer">
+						<p>автомобили, мотоциклы и автозапчасти
+							с аукционов японии и южной кореи</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/jquery.maskedinput.min.js"></script>
-    <script src="libs/bootstrap5/bootstrap.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
+	<!-- Modal zakazat avto -->
+	<div class="modal fade message-modal" id="message-id" tabindex="-1" aria-labelledby="exampleModalLabel2"
+		aria-hidden="true">
+		<div class="modal-dialog modal-fullscreen">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close"><img
+							src="images/icons/modal-close-icon.svg" alt=""></button>
+					<h5 class="modal-title" id="exampleModalLabel2"><img class="modal-logo" src="images/icons/menu-logo.svg" alt="">
+					</h5>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-lg-1"></div>
+						<div class="col-lg-6">
+							<div class="message-title">
+								<h2>отправьте нам сообщение</h2>
+							</div>
+							<div class="message-form">
+								<form action="#!" id="message-modal-form">
+									<div class="form-group">
+										<input type="text" name="name" placeholder="Ваше имя">
+									</div>
+									<div class="form-group">
+										<input type="tel" name="phone" placeholder="Ваш телефон">
+									</div>
+									<div class="form-group">
+										<input type="text" name="choose-avto" placeholder="Какой автомобиль Вас интересует?">
+									</div>
+	
+									<div class="message-btn">
+										<button type="submit">отправить</button>
+									</div>
+	
+									<label class="control control--checkbox">
+										<input type="checkbox" checked="checked">
+										<div class="control__indicator"></div>
+										<span>Отправляя данную форму, я даю своё согласие на обработку моих персональных данных</span>
+									</label>
+								</form>
+							</div>
+						</div>
+	
+						<div class="col-lg-5">
+							<div class="message-img">
+								<img src="images/message-modal-img.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="libs/bootstrap5/bootstrap.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
 
 </body>
 

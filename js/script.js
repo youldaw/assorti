@@ -66,7 +66,10 @@ $(function () {
 		spaceBetween: 50,
 		loop: true,
 		speed: 1000,
-		
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
 		navigation: {
 			nextEl: ".swiper-button-next3",
 			prevEl: ".swiper-button-prev3",
@@ -74,17 +77,9 @@ $(function () {
 		breakpoints: {
 			320: {
 				slidesPerView: 1,
-				pagination: {
-					el: ".swiper-pagination3",
-					clickable: true,
-				},
 			},
 			768: {
 				slidesPerView: 2,
-				pagination: {
-					el: ".swiper-pagination3",
-					clickable: true,
-				},
 			},
 			1024: {
 				slidesPerView: 2.3,
@@ -97,7 +92,17 @@ $(function () {
 		slidesPerView: 1,
 		spaceBetween: 20,
 		loop: false,
+		grabCursor: true,
 		speed: 1000,
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+	});
+	
+	var mainSwiper12 = new Swiper(".media-slider", {
+		slidesPerView: 1,
+		spaceBetween: 20,
 		pagination: {
 			el: ".swiper-pagination",
 			clickable: true,
@@ -122,23 +127,35 @@ $(function () {
 	});
 	mainSwiper.controller.control = pagingSwiper
 
+	// modal
+	$('.menu-in').each(function (idx, el) {
+		let openBtn = el.querySelector('p')
+		let box = el.querySelector('.menu-links');
+		$(openBtn).on('click', function() {
+			$(box).toggleClass('active');
+		})
+	})
 
 	// index.html end-slide
 	var mainSwiperEnd = new Swiper(".end-slide", {
 		slidesPerView: 1,
 		spaceBetween: 50,
 		loop: false,
+		grabCursor: true,
+		// autoplay: {
+		// 	delay: 6000,
+		// },
 		speed: 1000,
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
 		breakpoints: {
 			640: {
 				slidesPerView: 1,
 			},
 			768: {
 				slidesPerView: 1,
-				pagination: {
-					el: ".swiper-paginationEnd",
-					clickable: true,
-				},
 			},
 			1024: {
 				slidesPerView: 1,
@@ -182,7 +199,7 @@ $(function () {
 			},
 			768: {
 				slidesPerView: 1,
-				
+
 			},
 			1024: {
 				slidesPerView: 1,
@@ -277,6 +294,16 @@ $(function () {
 		},
 	});
 
+
+	var aboutWorkSlider = new Swiper('.history-slider-swiper', {
+		loop: true,
+		spaceBetween: 0,
+		slidesPerView: 1,
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+	});
 
 	// input type file
 	$("#FileInput").on('change', function (e) {

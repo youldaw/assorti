@@ -27,11 +27,11 @@
 							<img src="images/icons/logo.svg" alt="">
 						</a>
 						<a href="#!" class="header-logo-media">
-							<img src="images/icons/header-logo-2.svg" alt="">
+							<img src="images/mob-logo.svg" alt="">
 						</a>
 					</div>
 					<div class="header-right">
-						<a href="#!" class="header-right-btn">
+						<a href="#!" class="header-right-btn" data-bs-toggle="modal" data-bs-target="#message-id">
 							<img src="images/icons/header-top-right-icon.svg" alt="">
 						</a>
 						<div class="header-right-logos">
@@ -41,7 +41,7 @@
 							<a href="#!">
 								<img src="images/icons/whatsap8.svg" alt="">
 							</a>
-							<a href="#!">
+							<a href="#!" class="me-2" data-bs-toggle="modal" data-bs-target="#message-id">
 								<svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<circle cx="12.5002" cy="12.9999" r="12.1974" fill="#D60000" />
 									<path
@@ -451,6 +451,59 @@
 					<div class="menu-footer">
 						<p>автомобили, мотоциклы и автозапчасти
 							с аукционов японии и южной кореи</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade message-modal" id="message-id" tabindex="-1" aria-labelledby="exampleModalLabel2"
+		aria-hidden="true">
+		<div class="modal-dialog modal-fullscreen">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close"><img
+							src="images/icons/modal-close-icon.svg" alt=""></button>
+					<h5 class="modal-title" id="exampleModalLabel2"><img class="modal-logo" src="images/icons/menu-logo.svg" alt="">
+					</h5>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-lg-1"></div>
+						<div class="col-lg-6">
+							<div class="message-title">
+								<h2>отправьте нам сообщение</h2>
+							</div>
+							<div class="message-form">
+								<form action="#!" id="message-modal-form">
+									<div class="form-group">
+										<input type="text" name="name" placeholder="Ваше имя">
+									</div>
+									<div class="form-group">
+										<input type="tel" name="phone" placeholder="Ваш телефон">
+									</div>
+									<div class="form-group">
+										<input type="text" name="choose-avto" placeholder="Какой автомобиль Вас интересует?">
+									</div>
+	
+									<div class="message-btn">
+										<button type="submit">отправить</button>
+									</div>
+	
+									<label class="control control--checkbox">
+										<input type="checkbox" checked="checked">
+										<div class="control__indicator"></div>
+										<span>Отправляя данную форму, я даю своё согласие на обработку моих персональных данных</span>
+									</label>
+								</form>
+							</div>
+						</div>
+	
+						<div class="col-lg-5">
+							<div class="message-img">
+								<img src="images/message-modal-img.png" alt="">
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
